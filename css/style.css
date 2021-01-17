@@ -1,0 +1,15 @@
+.img
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 100px;
+    height: 100px;
+    border: solid 2px;
+
+    
+}
+.spaceImg
+{
+    padding-bottom: 50px;
+}
