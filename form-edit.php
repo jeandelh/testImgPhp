@@ -1,6 +1,13 @@
 <?php
-    require 'includes/bdd.inc.php';
-?>    
+
+include 'includes/bdd.inc.php'; 
+    $id=$_GET['edit'];
+
+    $req = $db->prepare('SELECT * FROM files WHERE id=' . $id);
+    $req->execute();
+    $donnees = $req->fetch();
+    print_r($donnees);
+?>
 <!DOCTYPE html>
 <html>
     
@@ -24,7 +31,7 @@
 
                 <input type="file" name="fichier" /> <br/>
 
-                <input type="hidden"  name="form-add">
+                <input type="hidden"  name="form-edit">
 
                 <input type="submit" value="Envoyer le fichier" />
 
@@ -35,6 +42,3 @@
     </body>
     <!--size verification possible-->
 </html>
-
- 
-

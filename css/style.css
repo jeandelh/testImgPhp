@@ -1,15 +1,66 @@
-.img
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+#buttonListSpace
+{
+    padding-top: 20px;
+    padding-left: 30px;
+
+}
+#positionInput
 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
 
+.title
+{
+    text-align: center;
+    padding-bottom: 30px;
+}
+#positionImg
+{
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#img
+{
+    display: flex;
+    flex-direction: column;
+    
     width: 100px;
     height: 100px;
     border: solid 2px;
+    
 
     
 }
-.spaceImg
+
+#positionButton
 {
-    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 42px ;
+}
+
+
+.button
+{
+   
+    width: 100px;
+    height: 20px;
+    font-weight: bold;
+  
+}
+#spaceButton
+{
+    padding-bottom: 10px;
 }
